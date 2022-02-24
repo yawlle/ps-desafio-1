@@ -39,6 +39,22 @@
                             </li>
                         </ul>
                         <ul class="nav">
+                            <li class="nav-item{{ $activePage == 'jogadores-management' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('jogador.index') }}">
+                                    <i class="sidebar-mini"><span class="material-icons">perm_identity</span></i>
+                                    <span class="sidebar-normal">{{ __('Jogadores') }} </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
+                            <li class="nav-item{{ $activePage == 'nacionalidade-management' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('nacionalidade.index') }}">
+                                    <i class="sidebar-mini"><span class="material-icons">view_comfy_alt</span></i>
+                                    <span class="sidebar-normal">{{ __('Nacionalidade') }} </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav">
                             <li class="nav-item{{ $activePage == 'log-list' ? ' active' : '' }}">
                                 <a class="nav-link" href="{{ route('log.index') }}">
                                     <i class="sidebar-mini"><span class="material-icons">history</span></i>
